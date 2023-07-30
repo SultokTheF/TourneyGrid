@@ -28,17 +28,14 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-links">
-                Contact
+              <Link to="/teamList" className="nav-links">
+                Teams
               </Link>
             </li>
           </ul>
           <div className="nav-buttons">
             <Link to="/login" className='nav-links'>
-              <Button body="Login" />
-            </Link>
-            <Link to="/register" className="nav-links">
-              <Button body="Register"/>
+              <Button body="Create Tournament" />
             </Link>
           </div>
         </div>
