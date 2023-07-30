@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-import '../../assets/styles/Button.css';
+import '../../assets/styles/ui/Button.css';
 
 interface ButtonBody {
   body: string;

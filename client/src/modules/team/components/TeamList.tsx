@@ -5,6 +5,8 @@ import Team from '../types/Team';
 
 import TeamCard from './TeamCard';
 
+import Spinner from '../../../components/ui/Spinner';
+
 import '../assets/TeamList.css';
 
 
@@ -30,7 +32,10 @@ const TeamList: React.FC = () => {
     <div className='team-list'>
       <h2>Team List</h2>
       <TeamCard/>
-      <ul>
+      { teams.length === 0 ? (
+        <Spinner/>
+      ) : (
+        <ul>
         {teams.map((team) => (
           <li key={team.id}>
             <strong>{team.name}</strong>
@@ -38,6 +43,7 @@ const TeamList: React.FC = () => {
           </li>
         ))}
       </ul>
+      ) }
     </div>
   );
 };

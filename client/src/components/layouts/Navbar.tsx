@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Button from "../ui/Button";
 
-import '../../assets/styles/Navbar.css';
+import '../../assets/styles/layouts/Navbar.css';
 
 import LogoImage from '../../assets/logo.png';
 
