@@ -29,21 +29,23 @@ const TeamList: React.FC = () => {
   }, []);
 
   return (
-    <div className='team-list'>
-      <h2>Team List</h2>
-      <TeamCard/>
-      { teams.length === 0 ? (
-        <Spinner/>
-      ) : (
-        <ul>
-        {teams.map((team) => (
-          <li key={team.id}>
-            <strong>{team.name}</strong>
-            <p>{team.description}</p>
-          </li>
-        ))}
-      </ul>
-      ) }
+    <div className='container'>
+      <div className='team-list'>
+        <h2>Team List</h2>
+        <TeamCard/>
+        { teams.length === 0 ? (
+          <Spinner/>
+        ) : (
+          <ul>
+          {teams.map((team) => (
+            <li key={team.id}>
+              <strong>{team.name}</strong>
+              <p>{team.description}</p>
+            </li>
+          ))}
+        </ul>
+        ) }
+      </div>
     </div>
   );
 };

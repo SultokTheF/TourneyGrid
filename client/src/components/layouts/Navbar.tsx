@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Button from "../ui/Button";
-
 import '../../assets/styles/layouts/Navbar.css';
 
 import LogoImage from '../../assets/logo.png';
@@ -28,15 +26,13 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/teamList" className="nav-links">
+              <Link to="/team" className="nav-links">
                 Teams
               </Link>
             </li>
           </ul>
           <div className="nav-buttons">
-            <Link to="/login" className='nav-links'>
-              <Button body="Create Tournament" />
-            </Link>
+            <a className="button"> Create Tournament </a>
           </div>
         </div>
       </nav>

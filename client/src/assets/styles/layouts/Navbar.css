@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: #333;
+  background-color: var( --primaryColor );
   height: 80px;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: var( --whiteColor );
   font-size: 24px;
   text-decoration: none;
   display: flex; /* Add this to create a flex container */
@@ -48,14 +48,14 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: var( --whiteColor );
   text-decoration: none;
   font-size: 16px;
   transition: all 0.3s ease;
 }
 
 .nav-links:hover {
-  color: #f1c40f;
+  color: var( --hoverColor );
 }
 
 .nav-buttons {
