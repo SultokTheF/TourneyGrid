@@ -68,11 +68,11 @@ WSGI_APPLICATION = "server.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        'NAME': 'tournament',
+        'NAME': 'tournaments',
         'USER': 'postgres',
-        'PASSWORD': 'Mechta.01!',
+        'PASSWORD': '03110311',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 

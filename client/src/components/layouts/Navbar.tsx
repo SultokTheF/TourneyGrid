@@ -32,7 +32,12 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
           <div className="nav-buttons">
-            <a className="button"> Create Tournament </a>
+            <Link to="/team/add" className="button">
+              Create Team
+            </Link>
+            <Link to="/tournament/add" className="button">
+              Create Tournament
+            </Link>
           </div>
         </div>
       </nav>
