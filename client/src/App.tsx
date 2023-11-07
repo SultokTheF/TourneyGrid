@@ -22,7 +22,7 @@ export default function App() {
         <Route path='/team' element={<TournamentListPage />}/>
         <Route path='/team/add' element={<AddTeamPage />}/>
 
-        <Route path='/toutnament/add' element={<AddTournamentPage />}/>
+        <Route path='/tournament/add' element={<AddTournamentPage />}/>
       </Routes>
     </div>
   )

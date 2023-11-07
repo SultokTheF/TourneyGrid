@@ -30,6 +30,11 @@ const Navbar: React.FC = () => {
                 Teams
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/team" className="nav-links">
+                Tournaments
+              </Link>
+            </li>
           </ul>
           <div className="nav-buttons">
             <Link to="/team/add" className="button">

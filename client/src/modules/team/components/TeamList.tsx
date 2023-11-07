@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import Team from '../types/Team';
+import Team from '../../../types/Team';
+import { teamsEndpoint } from '../../../helpers/endpoints';
 
 import TeamCard from './TeamCard';
 
@@ -18,7 +19,7 @@ const TeamList: React.FC = () => {
     // Fetch the list of teams from the API
     const fetchTeams = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/v1/teams/');
+        const response = await axios.get(teamsEndpoint);
         setTeams(response.data);
       } catch (error) {
         console.error('Error fetching teams:', error);

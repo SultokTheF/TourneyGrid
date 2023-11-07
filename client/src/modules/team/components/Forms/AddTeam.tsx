@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../../assets/AddTeam.css';
 
-import { teams } from "../../../../helpers/endpoints";
+import { teamsEndpoint } from "../../../../helpers/endpoints";
 import axios from "axios";
 
 const AddTeam: React.FC = () => {
@@ -12,13 +12,13 @@ const AddTeam: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post( teams, {
+      const response = await axios.post( teamsEndpoint, {
         name: team,
         description: description,
       } )
 
       if( response.status === 201 ) {
-        alert( "Success!" );
+        window.location.replace( '/' )
       } else {
         alert( "Error!" );
       } 

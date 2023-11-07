@@ -94,6 +94,18 @@ body {
   background: transparent;
 }
 
+.login-box .user-box select {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var( --whiteColor );
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var( --whiteColor );
+  outline: none;
+  background: transparent;
+}
+
 .login-box .user-box label {
   position: absolute;
   top:0;
@@ -115,6 +127,14 @@ body {
 
 .login-box .user-box textarea:focus ~ label,
 .login-box .user-box textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: var( --btnHoverColor );
+  font-size: 12px;
+}
+
+.login-box .user-box select:focus ~ label,
+.login-box .user-box select:valid ~ label {
   top: -20px;
   left: 0;
   color: var( --btnHoverColor );
