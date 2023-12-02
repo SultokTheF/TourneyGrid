@@ -27,7 +27,7 @@ const RegisterForm: React.FC = () => {
                     password: password
                 } )
 
-                if( response.status === 200 ) {
+                if( response.status === 201 ) {
                     alert("Success!")
                     window.location.replace( '/' )
                 } else {
