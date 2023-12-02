@@ -45,7 +45,7 @@ body {
   padding-right: 1.5rem;
 }
 
-.login-box {
+.form-box {
   margin-top: 25%;
   position: absolute;
   top: 50%;
@@ -59,18 +59,18 @@ body {
   border-radius: 10px;
 }
 
-.login-box h2 {
+.form-box h2 {
   margin: 0 0 30px;
   padding: 0;
   color: var( --whiteColor );
   text-align: center;
 }
 
-.login-box .user-box {
+.form-box .user-box {
   position: relative;
 }
 
-.login-box .user-box input {
+.form-box .user-box input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -82,7 +82,7 @@ body {
   background: transparent;
 }
 
-.login-box .user-box textarea {
+.form-box .user-box textarea {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -94,7 +94,7 @@ body {
   background: transparent;
 }
 
-.login-box .user-box select {
+.form-box .user-box select {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -106,7 +106,7 @@ body {
   background: transparent;
 }
 
-.login-box .user-box label {
+.form-box .user-box label {
   position: absolute;
   top:0;
   left: 0;
@@ -117,24 +117,24 @@ body {
   transition: .5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.form-box .user-box input:focus ~ label,
+.form-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
   color: var( --btnHoverColor );
   font-size: 12px;
 }
 
-.login-box .user-box textarea:focus ~ label,
-.login-box .user-box textarea:valid ~ label {
+.form-box .user-box textarea:focus ~ label,
+.form-box .user-box textarea:valid ~ label {
   top: -20px;
   left: 0;
   color: var( --btnHoverColor );
   font-size: 12px;
 }
 
-.login-box .user-box select:focus ~ label,
-.login-box .user-box select:valid ~ label {
+.form-box .user-box select:focus ~ label,
+.form-box .user-box select:valid ~ label {
   top: -20px;
   left: 0;
   color: var( --btnHoverColor );

@@ -23,7 +23,7 @@ const AddTournamentForm: React.FC = () => {
 
   return (
     <>
-      <div className="login-box">
+      <div className="form-box">
         <h2>Tournament Registration</h2>
         <form>
           <div className="user-box">

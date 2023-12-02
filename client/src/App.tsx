@@ -9,6 +9,9 @@ import AddTeamPage from './pages/Teams/AddTeamPage';
 
 import AddTournamentPage from './pages/Tournaments/AddTournamentPage';
 
+import LoginPage from './pages/Authorization/LoginPage';
+import RegisterPage from './pages/Authorization/RegisterPage';
+
 import Navbar from './components/layouts/Navbar';
 
 export default function App() {
@@ -23,6 +26,9 @@ export default function App() {
         <Route path='/team/add' element={<AddTeamPage />}/>
 
         <Route path='/tournament/add' element={<AddTournamentPage />}/>
+
+        <Route path='/login' element={<LoginPage />}/>
+        <Route path='/register' element={<RegisterPage />}/>
       </Routes>
     </div>
   )

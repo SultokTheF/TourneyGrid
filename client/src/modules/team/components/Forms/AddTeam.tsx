@@ -29,7 +29,7 @@ const AddTeam: React.FC = () => {
 
   return (
     <>
-      <div className="login-box">
+      <div className="form-box">
         <h2>Team Registration</h2>
         <form onSubmit={handleSubmit}>
           <div className="user-box">
