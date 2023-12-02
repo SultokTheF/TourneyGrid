@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import '../../assets/styles/layouts/Navbar.css';
 
+import User from "../../types/User";
+
 import LogoImage from '../../assets/logo.png';
 
 const Navbar: React.FC = () => {
+  const [userData, setUserData] = useState<User | null>(null);
+
   return (
     <>
       <nav className="navbar">

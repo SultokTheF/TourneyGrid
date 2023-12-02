@@ -27,7 +27,7 @@ const RegisterForm: React.FC = () => {
                     password: password
                 } )
 
-                if( response.status === 201 ) {
+                if( response.status === 200 ) {
                     alert("Success!")
                     window.location.replace( '/' )
                 } else {
@@ -47,71 +47,71 @@ const RegisterForm: React.FC = () => {
                 <div className="form-box register-form">
                     <h2>Registration</h2>
                     <form onSubmit={handleSubmit}>
-                    <div className="user-box">
-                        <input
-                        type="text"
-                        required
-                        value={firstName}
-                        onChange={(e) => setFirstName( e.target.value )}
-                        />
-                        <label>First Name</label>
-                    </div>
-                    <div className="user-box">
-                        <input
-                        type="text"
-                        required
-                        value={lastName}
-                        onChange={(e) => setLastName( e.target.value )}
-                        />
-                        <label>Last Name</label>
-                    </div>
-                    <div className="user-box">
-                        <input
-                        type="text"
-                        required
-                        value={username}
-                        onChange={(e) => setUsername( e.target.value )}
-                        />
-                        <label>Username</label>
-                    </div>
-                    <div className="user-box">
-                        <input
-                        type="email"
-                        required
-                        value={email}
-                        onChange={(e) => setEmail( e.target.value )}
-                        />
-                        <label>email</label>
-                    </div>
-                    <div className="user-box">
-                        <select
+                        <div className="user-box">
+                            <input
+                            type="text"
                             required
-                            value={role} 
-                            onChange={(e) => setRole(e.target.value)}
-                        >
-                            <option value="user">player</option>
-                            <option value="moderator">tournament moderator</option>
-                        </select>
-                    </div>
-                    <div className="user-box">
-                        <input
-                        type="password"
-                        required
-                        value={password}
-                        onChange={(e) => setPassword( e.target.value )}
-                        />
-                        <label>Password</label>
-                    </div>
-                    <div className="user-box">
-                        <input
-                        type="password"
-                        required
-                        value={validatePassword}
-                        onChange={(e) => setValidatePassword( e.target.value )}
-                        />
-                        <label>Validate Password</label>
-                    </div>
-                    <button className="button">Register</button>
+                            value={firstName}
+                            onChange={(e) => setFirstName( e.target.value )}
+                            />
+                            <label>First Name</label>
+                        </div>
+                        <div className="user-box">
+                            <input
+                            type="text"
+                            required
+                            value={lastName}
+                            onChange={(e) => setLastName( e.target.value )}
+                            />
+                            <label>Last Name</label>
+                        </div>
+                        <div className="user-box">
+                            <input
+                            type="text"
+                            required
+                            value={username}
+                            onChange={(e) => setUsername( e.target.value )}
+                            />
+                            <label>Username</label>
+                        </div>
+                        <div className="user-box">
+                            <input
+                            type="email"
+                            required
+                            value={email}
+                            onChange={(e) => setEmail( e.target.value )}
+                            />
+                            <label>email</label>
+                        </div>
+                        <div className="user-box">
+                            <select
+                                required
+                                value={role} 
+                                onChange={(e) => setRole(e.target.value)}
+                            >
+                                <option value="user">player</option>
+                                <option value="moderator">tournament moderator</option>
+                            </select>
+                        </div>
+                        <div className="user-box">
+                            <input
+                            type="password"
+                            required
+                            value={password}
+                            onChange={(e) => setPassword( e.target.value )}
+                            />
+                            <label>Password</label>
+                        </div>
+                        <div className="user-box">
+                            <input
+                            type="password"
+                            required
+                            value={validatePassword}
+                            onChange={(e) => setValidatePassword( e.target.value )}
+                            />
+                            <label>Validate Password</label>
+                        </div>
+                        <button className="button">Register</button>
                     </form>
                 </div>
             </>
