@@ -16,6 +16,7 @@ router.register(r'double_elimination_brackets', DoubleEliminationBracketViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('user/', UserAPIView.as_view(), name='user'),
     path('register/', UserRegistrationAPIView.as_view(), name='register'),
     path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),

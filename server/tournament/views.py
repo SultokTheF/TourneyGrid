@@ -30,6 +30,27 @@ class UserViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return User.objects.all().order_by('id')
+    
+class UserAPIView(APIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    authentication_classes = [JWTAuthentication, SessionAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        # The user ID can be accessed from the authenticated user object
+        user_id = request.user.id
+
+        try:
+            # Retrieve the user object using the user ID
+            user = User.objects.get(id=user_id)
+        except User.DoesNotExist:
+            return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        # Serialize the user data
+        serializer = UserSerializer(user)
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 class TeamViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()

@@ -69,26 +69,48 @@ const Navbar: React.FC = () => {
               <>
                 {userData?.role === "admin" ? (
                   <>
-                    { userData?.first_name } { userData?.last_name }
-                    <ul>
-                      <li></li>
-                    </ul>
-                    <Link to="/team/add" className="button">
-                      Create Team
-                    </Link>
-                    <Link to="/tournament/add" className="button">
-                      Create Tournament
-                    </Link>
-                  </>
-                ):(
-                  <>
-                    <Link to="/team/add" className="button">
-                      Join team
-                    </Link>
-                    <div className="dropdown">
+                    {/* <div className="dropdown button">
                       <span>{userData?.username}</span>
                       <div className="dropdown-content">
                         <Link to="/logout">Logout</Link>
+                      </div>
+                      <div className="dropdown-content">
+                        <Link to="/team/add">
+                          Create Team
+                        </Link>
+                      </div>
+                      <div className="dropdown-content">
+                        <Link to="/tournament/add">
+                          Create Tournament
+                        </Link>
+                      </div>
+                    </div> */}
+                    <div className="dropdown">
+                      <button className="dropbtn">{userData?.username}</button>
+                      <div className="dropdown-content">
+                        <Link to="/tournament/add">
+                          Create Tournament
+                        </Link>
+                        <Link to="/team/add">
+                          Create Team
+                        </Link>
+                        <Link to="/logout">
+                          Logout
+                        </Link>
+                      </div>
+                    </div>
+                  </>
+                ):(
+                  <>
+                    <div className="dropdown">
+                      <button className="dropbtn">{userData?.username}</button>
+                      <div className="dropdown-content">
+                        <Link to="/tournament/add">
+                          Join Team
+                        </Link>
+                        <Link to="/logout">
+                          Logout
+                        </Link>
                       </div>
                     </div>
                   </>
