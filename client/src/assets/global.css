@@ -180,6 +180,16 @@ body {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: var(--hoverColor)}
 
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {background-color: var(--hoverColor)}
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;

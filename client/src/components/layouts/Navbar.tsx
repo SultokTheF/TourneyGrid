@@ -94,7 +94,11 @@ const Navbar: React.FC = () => {
                         <Link to="/team/add">
                           Create Team
                         </Link>
-                        <Link to="/logout">
+                        <Link to="/" 
+                          onClick={() => {
+                            localStorage.removeItem( 'JWT' );
+                            window.location.replace( '/' );
+                          }}>
                           Logout
                         </Link>
                       </div>
@@ -108,7 +112,11 @@ const Navbar: React.FC = () => {
                         <Link to="/tournament/add">
                           Join Team
                         </Link>
-                        <Link to="/logout">
+                        <Link to="/" 
+                          onClick={() => {
+                            localStorage.removeItem( 'JWT' );
+                            window.location.replace( '/' );
+                          }}>
                           Logout
                         </Link>
                       </div>
