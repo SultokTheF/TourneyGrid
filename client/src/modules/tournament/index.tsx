@@ -1,3 +1,4 @@
 import AddTournamentForm from "./components/AddTournamentForm";
+import TournamentBracket from "./components/TournamentBracket";
 
-export {AddTournamentForm };
+export {AddTournamentForm, TournamentBracket };

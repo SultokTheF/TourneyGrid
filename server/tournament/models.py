@@ -64,7 +64,7 @@ class Team(models.Model):
         return self.name
 
 
-class Match(models.Model):
+class Match(models.Model):    
     name = models.CharField(max_length=100)
     scheduled = models.DateTimeField()
     home_team = models.ForeignKey(Team, related_name='home_matches', on_delete=models.CASCADE)
